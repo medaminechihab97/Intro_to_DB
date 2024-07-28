@@ -4,6 +4,7 @@ USE alx_book_store;
 CREATE TABLE Books (
     book_id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100),
+    price INT,
     author_id INT,
     publication_year INT,
     FOREIGN KEY (author_id) REFERENCES Authors(author_id)
