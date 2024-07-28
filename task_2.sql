@@ -5,12 +5,13 @@ CREATE TABLE Books (
     book_id INT PRIMARY KEY AUTO_INCREMENT,
     title VARCHAR(100),
     author_id INT,
-    publication_year INT
+    publication_year INT,
+    FOREIGN KEY (author_id) REFERENCES Authors(author_id)
 );
 
 CREATE TABLE Authors (
     author_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50)
+    author_name VARCHAR(50)
 );
 
 CREATE TABLE Customers (
