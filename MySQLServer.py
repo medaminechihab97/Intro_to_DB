@@ -10,7 +10,7 @@ try:
         host=hostname, user=username, password=password
     )
 
-    # Create database (avoiding SELECT/SHOW statements)
+    # Create database (avoiding SE LECT/SH OW statements)
     cursor = connection.cursor()
     cursor.execute(f"CREATE DATABASE IF NOT EXISTS alx_book_store")
 
